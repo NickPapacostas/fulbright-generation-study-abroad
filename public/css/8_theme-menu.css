@@ -188,6 +188,7 @@ ul li.current_page_item  a{
 .footer input, .footer textarea {
     margin-top: 1em;
     padding-left: 1em;
+    width: 100%;
 }
 
 .footer .button {

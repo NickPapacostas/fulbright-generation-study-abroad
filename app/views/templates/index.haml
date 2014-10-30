@@ -26,6 +26,7 @@
     %script{:src => "/js/2_menu.js"}
     %script{:src => "/js/3_bootstrap.min.js"}
     %script{:src => "/js/4_docs.min.js"}
+    %script{:src => "/js/list.min.js"}
   %body.home.blog
     #menu_wrapper
       .top_wrapper
@@ -63,24 +64,24 @@
         %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
       .carousel-inner
         .item.active
-          %img.img-responsive{:alt => "First slide", :src => "images/sunset-evian-gulf-greece.jpg"}
-          .container
+          %img.img-responsive{:alt => "First slide", :src => "images/fulbright-education-quote.jpg"}
+          .container.caption
             .carousel-caption
               %h1 Study abroad in Greece...
               %p See our partner universities
               %p
                 %a.btn.btn-lg.btn-primary.scroll-to{:href => "#universities", :role => "button"} Read More
         .item
-          %img.img-responsive{:alt => "Second slide", :src => "images/crete-bay.jpg"}/
-          .container
+          %img.img-responsive{:alt => "Second slide", :src => "images/fulbright-people-sitting.jpg"}/
+          .container.caption
             .carousel-caption
               %h1 Why study in Greece...
               %p Rich culture, diverse academics, supportive institutions
               %p
                 %a.btn.btn-lg.btn-primary.scroll-to{:href => "#why-greece", :role => "button"} Read More
         .item
-          %img.img-responsive{:alt => "Third slide", :src => "images/athens-converted.jpg"}/
-          .container
+          %img.img-responsive{:alt => "Third slide", :src => "images/fulbright-sitting-in-circle.jpg"}/
+          .container.caption
             .carousel-caption
               %h1 Student stories
               %p Hear first hand from students who have studied in Greece
@@ -194,9 +195,7 @@
               .center-title
                 .heading-title
                   %h2.h2-section-title#universities Universities
-        .space-sep60
-        .container
-          .row
+            .space-sep60
             .col-md-4.col-sm-4
               .content-box.content-style2.anim-opacity.animated.fadeIn.animatedVisi{"data-animdelay" => "0.2s", "data-animrepeat" => "0", "data-animspeed" => "1s", "data-animtype" => "fadeIn", :style => "-webkit-animation: 1s 0.2s;"}
                 %h4.h4-body-title

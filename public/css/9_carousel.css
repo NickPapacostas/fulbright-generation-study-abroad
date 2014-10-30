@@ -45,6 +45,9 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
+
+  background: rgba(27, 27, 27, 0.75);
+  border-radius: 25px;
   z-index: 10;
 }
 
@@ -140,7 +143,7 @@ body {
     font-size: 21px;
     line-height: 1.4;
   }
-
+  
   .featurette-heading {
     font-size: 50px;
   }
