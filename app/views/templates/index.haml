@@ -21,12 +21,15 @@
     %link{:href => "/css/7_flat-blue.css", :rel => "stylesheet"}/
     %link{:href => "/css/2_font-awesome.min.css", :rel => "stylesheet"}/
     %link{:href => "/css/5_bootstrap.min.css", :rel => "stylesheet"}/
+    %link{:href => "/css/ng-table.css", :rel => "stylesheet"}/
     %script{:src => "/js/0_jquery.js"}
     %script{:src => "/js/1_jquery-migrate.min.js"}
     %script{:src => "/js/2_menu.js"}
     %script{:src => "/js/3_bootstrap.min.js"}
     %script{:src => "/js/4_docs.min.js"}
-    %script{:src => "/js/list.min.js"}
+    %script{:src => "/js/angular.min.js"}
+    %script{:src => "/js/ng-table.js"}
+    %script{:src => "/js/university_list.js"}
   %body.home.blog
     #menu_wrapper
       .top_wrapper
@@ -189,47 +192,35 @@
               %iframe(src="//player.vimeo.com/video/101688587" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
         
         .space-sep60        
-        .container
+        .container{'ng-app' => 'universityList'}
           .row
             .col-md-12.col-sm-12
               .center-title
                 .heading-title
                   %h2.h2-section-title#universities Universities
             .space-sep60
-            .col-md-4.col-sm-4
-              .content-box.content-style2.anim-opacity.animated.fadeIn.animatedVisi{"data-animdelay" => "0.2s", "data-animrepeat" => "0", "data-animspeed" => "1s", "data-animtype" => "fadeIn", :style => "-webkit-animation: 1s 0.2s;"}
-                %h4.h4-body-title
-                  %i
-                    %a{href: "http://www.cyathens.org/welcome"} 
-                      %img{src: "images/cya-logo.png"}
-                .content-box-text
-                  The College Year in Athens program provides university-level courses focused on Greece and the Mediterranean region. 
-                  %div
-                    %a.read-more{:href => "http://www.cyathens.org/welcome"}
-                      %span read more
-            .col-md-4.col-sm-4
-              .content-box.content-style2.anim-opacity.animated.fadeIn.animatedVisi{"data-animdelay" => "0.2s", "data-animrepeat" => "0", "data-animspeed" => "1s", "data-animtype" => "fadeIn", :style => "-webkit-animation: 1s 0.2s;"}
-                %h4.h4-body-title
-                  %i
-                    %a{href: "http://studyabroad.arcadia.edu/find-a-program/programs-by-country/greece/arcadia-in-greece/"}
-                      %img{src: "images/arcadia-global-studies.png"}
-                .content-box-text
-                  This program will challenge you to step out of your comfort zone and experience the full mosaic of Greek culture. You’ll be encouraged to become an active participant in the Greek community and to learn about Greek culture through experience.
-                  %div
-                    %a.read-more{:href => "http://studyabroad.arcadia.edu/find-a-program/programs-by-country/greece/arcadia-in-greece/"}
-                      %span read more
-            .col-md-4.col-sm-4
-              .content-box.content-style2.anim-opacity.animated.fadeIn.animatedVisi{"data-animdelay" => "0.2s", "data-animrepeat" => "0", "data-animspeed" => "1s", "data-animtype" => "fadeIn", :style => "-webkit-animation: 1s 0.2s;"}
-                %h4.h4-body-title
-                  %i
-                    %a{href: "http://www.acg.edu/about-acg"}
-                      %img{src: "images/deree-logo.png"}
+            .table#university-list{'ng-controller' => 'UniversitiesController'}
+              %table{'ng-table' => 'tableParams'}
+                %tr{'ng-repeat' => 'university in universities | limitTo:10'}
+                  %td{'data-title' => "'Institution'"}
+                    {{university.HEI}}
+                  %td{'data-title' => "'Program'"}
+                    .program-name{'ng-if' => "!isLink(university['TITLE OF THE PROGRAM'])"}
+                      {{university['TITLE OF THE PROGRAM']}}
+                    .program-name{'ng-if' => "isLink(university['TITLE OF THE PROGRAM'])"}
+                      %a{href: "{{university['TITLE OF THE PROGRAM'].href}}", 'style' => 'color: blue'}
+                        {{university['TITLE OF THE PROGRAM'].text}}
+                  %td{'data-title' => "'Department'"}
+                    .department-name{'ng-if' => "!isLink(university['SCHOOL'])"}
+                      {{university['SCHOOL']}}
+                    .department-name{'ng-if' => "isLink(university['SCHOOL'])"}
+                      %a{href: "{{university['SCHOOL'].href}}", 'style' => 'color: blue'}
+                        {{university['SCHOOL'].text}}
 
-                .content-box-text
-                  Located in Athens, and originally founded in 1875 Smyrna, DEREE - The American College of Greece is the oldest American accredited college in Europe and the largest private institution in Greece.
-                  %div
-                    %a.read-more{:href => "http://www.acg.edu/about-acg"}
-                      %span read more
+              
+
+
+
     %footer
       .footer
         .container
