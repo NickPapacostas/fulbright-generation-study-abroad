@@ -21,6 +21,7 @@
     %link{:href => "/css/7_flat-blue.css", :rel => "stylesheet"}/
     %link{:href => "/css/2_font-awesome.min.css", :rel => "stylesheet"}/
     %link{:href => "/css/5_bootstrap.min.css", :rel => "stylesheet"}/
+    %link{:href => "/css/overrides.css", :rel => "stylesheet"}/
     %link{:href => "/css/ng-table.css", :rel => "stylesheet"}/
     %script{:src => "/js/0_jquery.js"}
     %script{:src => "/js/1_jquery-migrate.min.js"}
@@ -50,6 +51,8 @@
                   .navbar-collapse.collapse
                     %ul.nav.navbar-nav
                       %li
+                        %a{:href => "http://www.iie.org/Programs/Generation-Study-Abroad", target: "_blank"} Generation Study Abroad
+                      %li
                         %a.scroll-to{:href => "#fulbright-in-greece"} Fulbright Foundation in Greece
                       %li
                         %a.scroll-to{:href => "#why-greece"} Why Greece?
@@ -57,8 +60,6 @@
                         %a.scroll-to{:href => "#student-stories"} Student Stories
                       %li
                         %a.scroll-to{:href => "#universities"} Universities
-                      %li
-                        %a{:href => "http://www.iie.org/Programs/Generation-Study-Abroad", target: "_blank"} Generation Study Abroad
     #myCarousel.carousel.slide{"data-ride" => "carousel"}
       / Indicators
       %ol.carousel-indicators
@@ -98,6 +99,30 @@
     / /.carousel
     .content-wrapper
       .body-wrapper
+        .container.generation-study-abroad
+          .row
+            .col-md-12.col-sm-12
+              .center-title
+                .heading-title
+                  %h2.h2-section-title#generation-study-abroad Generation Study Abroad
+                  %h3 Travelling is dooooppppeee
+          .space-sep60
+          .row
+            .col-md-6.col-sm-6
+              %p 
+                %em 
+                  The Fulbright Foundation in Greece is excited to be aiding in the 
+                  %a{href: 'http://www.iie.org/Programs/Generation-Study-Abroad'} Generation Study Abroad 
+                  effort by providing a consildated resource for American students looking to study in Greece. 
+              %p The Fulbright Foundation in Greece takes pride in being the oldest Fulbright Program in Europe and the second-oldest continuously operating Fulbright Program in the world. 
+              %p Since the Program's beginning in 1948, the Fulbright Foundation in Greece has awarded more than 4,700 grants to Greeks and Americans and has offered free advising services for studies in the United States to thousands of individuals. 
+              %p Fulbright alumni include Nobel and Pulitzer Prize winners, prime ministers and heads of state, professors and scientists, ambassadors and artists, Supreme Court Justices and company presidents.
+
+            .col-md-6.col-sm-6
+              %iframe( width="400" height="225" src="//www.youtube.com/embed/1Ai1KB8XSUU?rel=0&amp;controls=0" frameborder="0" allowfullscreen)
+        
+        .space-sep60        
+
         .container.fulbright-in-greece
           .row
             .col-md-12.col-sm-12

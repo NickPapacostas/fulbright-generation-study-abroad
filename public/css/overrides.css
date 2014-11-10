@@ -1,0 +1,21 @@
+.navbar{
+  margin-bottom: 0px;
+}
+
+.nav li {
+  margin-right: 3em;
+  font-size: 1.2em;
+  padding-top: 1em;
+}
+
+.row{
+  margin-right: 0px;
+}
+
+.item .carousel-caption {
+  position: inherit;
+  background: inherit;
+/*  padding: 0px;
+*/}
+.item .carousel-caption h1 {
+}
