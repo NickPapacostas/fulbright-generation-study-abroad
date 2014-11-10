@@ -47,7 +47,6 @@ body {
 .carousel-caption {
 
   background: rgba(27, 27, 27, 0.75);
-  border-radius: 25px;
   z-index: 10;
 }
 

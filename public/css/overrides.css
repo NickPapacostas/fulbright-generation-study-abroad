@@ -15,7 +15,21 @@
 .item .carousel-caption {
   position: inherit;
   background: inherit;
+  top: 200px;
 /*  padding: 0px;
 */}
 .item .carousel-caption h1 {
+}
+
+.container.caption {
+  border-top: 4px solid #3498db;
+  width: 100%;
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(127,127,127,0.99) 1%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(1%,rgba(127,127,127,0.99)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(127,127,127,0.99) 1%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(127,127,127,0.99) 1%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(127,127,127,0.99) 1%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(127,127,127,0.99) 1%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
 }
