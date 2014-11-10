@@ -216,26 +216,40 @@
             .col-md-12.col-sm-12
               .center-title
                 .heading-title
-                  %h2.h2-section-title#universities Universities
+                  %h2.h2-section-title#universities Academic Programs 
+                  %h3 These programs are offered by Greek universities for international students
             .space-sep60
-            .table#university-list{'ng-controller' => 'UniversitiesController'}
-              %table{'ng-table' => 'tableParams'}
-                %tr{'ng-repeat' => 'university in universities | limitTo:10'}
-                  %td{'data-title' => "'Institution'"}
+            .controller{'ng-controller' => 'UniversitiesController'}
+              %table.table#university-list{'ng-table' => 'tableParams', 'template-pagination'=>"custom/pager", 'show-filter' => 'true'}
+                %tr{'ng-repeat' => 'university in $data'}
+                  %td{'data-title' => "'Institution'", sortable: "'HEI'", 'filter' => "{'HEI': 'text'}"}
                     {{university.HEI}}
-                  %td{'data-title' => "'Program'"}
+                  %td{'data-title' => "'Program'", 'filter' => "{'TITLE OF THE PROGRAM': 'text'}"}
                     .program-name{'ng-if' => "!isLink(university['TITLE OF THE PROGRAM'])"}
                       {{university['TITLE OF THE PROGRAM']}}
                     .program-name{'ng-if' => "isLink(university['TITLE OF THE PROGRAM'])"}
                       %a{href: "{{university['TITLE OF THE PROGRAM'].href}}", 'style' => 'color: blue'}
                         {{university['TITLE OF THE PROGRAM'].text}}
-                  %td{'data-title' => "'Department'"}
+                  %td{'data-title' => "'Department'", 'filter' => "{'SCHOOL': 'text'}"}
                     .department-name{'ng-if' => "!isLink(university['SCHOOL'])"}
                       {{university['SCHOOL']}}
                     .department-name{'ng-if' => "isLink(university['SCHOOL'])"}
                       %a{href: "{{university['SCHOOL'].href}}", 'style' => 'color: blue'}
                         {{university['SCHOOL'].text}}
-
+                  %td{'data-title' => "'Fees'", sortable: "'FEES'", 'filter' => "{'FEES': 'text'}"}
+                    .fees
+                      {{university['FEES']}}
+                %script{:id => "custom/pager", :type => "text/ng-template"}
+                  %ul.pager.ng-cloak
+                    %li{"ng-class" => "{'disabled': !page.active, 'previous': page.type == 'prev', 'next': page.type == 'next'}", "ng-repeat" => "page in pages", "ng-show" => "page.type == 'prev' || page.type == 'next'", "ng-switch" => "page.type"}
+                      %a{:href => "", "ng-click" => "params.page(page.number)", "ng-switch-when" => "prev"} « Previous
+                      %a{:href => "", "ng-click" => "params.page(page.number)", "ng-switch-when" => "next"} Next »
+                    %li
+                      .btn-group
+                        %button.btn.btn-default{"ng-class" => "{'active':params.count() == 10}", "ng-click" => "params.count(10)", :type => "button"} 10
+                        %button.btn.btn-default{"ng-class" => "{'active':params.count() == 25}", "ng-click" => "params.count(25)", :type => "button"} 25
+                        %button.btn.btn-default{"ng-class" => "{'active':params.count() == 50}", "ng-click" => "params.count(50)", :type => "button"} 50
+                        %button.btn.btn-default{"ng-class" => "{'active':params.count() == 100}", "ng-click" => "params.count(100)", :type => "button"} 100
               
 
 
