@@ -17,7 +17,6 @@ universityList.controller('UniversitiesController', function ($scope, $http, $fi
       total: $scope.data.length,
 
       getData: function($defer, params) {
-        console.log(params.sorting());
         var orderedData = params.sorting() ?
             $filter('orderBy')(data, params.orderBy()) :
             data;
@@ -28,7 +27,6 @@ universityList.controller('UniversitiesController', function ($scope, $http, $fi
         $defer.resolve(orderedData.slice((params.page() - 1) * params.count(), params.page() * params.count()));
       }
     });    
-    window.universities = data;
   };
   $scope.isLink = function(input) {
     return input instanceof Object
