@@ -28,6 +28,7 @@
     %script{:src => "/js/angular.min.js"}
     %script{:src => "/js/ng-table.js"}
     %script{:src => "/js/university_list.js"}
+    %script{:src => "/js/passport_list.js"}
   %body.home.blog
     #menu_wrapper
       .top_wrapper
@@ -227,7 +228,8 @@
               %iframe(src="//player.vimeo.com/video/101688587" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
         
         .space-sep60        
-        .container{'ng-app' => 'universityList'}
+      .angular-container{'ng-app' => 'universityList'}
+        .container
           .row
             .col-md-12.col-sm-12
               .center-title
@@ -255,6 +257,28 @@
                   %td{'data-title' => "'Fees'", sortable: "'FEES'", 'filter' => "{'FEES': 'text'}"}
                     .fees
                       {{university['FEES']}}
+        .container
+          .row
+            .col-md-12.col-sm-12
+              .center-title
+                .heading-title
+                  %h2.h2-section-title#passport_programs PASSPORRRRRT 
+                  %h3 Change me!
+            .space-sep60
+            .controller{'ng-controller' => 'PassportProgramsController'}
+              %table.table#program-list{'ng-table' => 'tableParams', 'template-pagination'=>"custom/pager"}
+                %tr{'ng-repeat' => 'program in $data'}
+                  %td{'data-title' => "'Program'", sortable: "'Program'", 'filter' => "{'Program': 'text'}"}
+                    .program
+                      {{program['Program']}}
+                  %td{'data-title' => "'Sponsor'", sortable: "'Sponsor'", 'filter' => "{'Sponsor': 'text'}"}
+                    .sponsor
+                      {{program['Sponsor']}}
+                  %td{'data-title' => "'FullPathName'", sortable: "'FullPathName'", 'filter' => "{'FullPathName': 'text'}"}
+                    .location
+                      {{program['FullPathName']}}
+
+
                 %script{:id => "custom/pager", :type => "text/ng-template"}
                   %ul.pager.ng-cloak
                     %li{"ng-class" => "{'disabled': !page.active, 'previous': page.type == 'prev', 'next': page.type == 'next'}", "ng-repeat" => "page in pages", "ng-show" => "page.type == 'prev' || page.type == 'next'", "ng-switch" => "page.type"}
@@ -266,7 +290,10 @@
                         %button.btn.btn-default{"ng-class" => "{'active':params.count() == 25}", "ng-click" => "params.count(25)", :type => "button"} 25
                         %button.btn.btn-default{"ng-class" => "{'active':params.count() == 50}", "ng-click" => "params.count(50)", :type => "button"} 50
                         %button.btn.btn-default{"ng-class" => "{'active':params.count() == 100}", "ng-click" => "params.count(100)", :type => "button"} 100
-              
+                      .space-sep60        
+
+
+
 
 
 

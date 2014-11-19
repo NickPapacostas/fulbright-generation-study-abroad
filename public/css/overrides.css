@@ -3,7 +3,6 @@
 }
 
 .nav li {
-  margin-right: 3em;
   font-size: 1.2em;
   padding-top: 1em;
 }
@@ -15,9 +14,8 @@
 .item .carousel-caption {
   position: inherit;
   background: inherit;
-  top: 200px;
-/*  padding: 0px;
-*/}
+}
+
 .item .carousel-caption h1 {
 }
 
