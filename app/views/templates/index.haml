@@ -29,6 +29,7 @@
     %script{:src => "/js/ng-table.js"}
     %script{:src => "/js/university_list.js"}
     %script{:src => "/js/passport_list.js"}
+    %script{:src => "/js/student_stories.js"}
   %body.home.blog
     #menu_wrapper
       .top_wrapper
@@ -103,7 +104,7 @@
               .center-title
                 .heading-title
                   %h2.h2-section-title#generation-study-abroad Generation Study Abroad
-                  %h3 Travelling is dooooppppeee
+                  %h3 A campaign to double the number of American students studying abroad by the end of the decade
           .space-sep60
           .row
             .col-md-6.col-sm-6
@@ -138,7 +139,7 @@
               .center-title
                 .heading-title
                   %h2.h2-section-title#fulbright-in-greece Fulbright in Greece
-                  %h3 Dedicated to supporting the Generation Study Abroad initiative
+                  %h3 An organization committed to supporting and facilitating the Generation Study Abroad Initiative
           .space-sep60
           .row
             .col-md-6.col-sm-6
@@ -163,56 +164,46 @@
               .center-title
                 .heading-title
                   %h2.h2-section-title#why-greece Why Greece?
-                  %h3 Greece is like no other place in the world to study. 
+                  %h3 Greece is a gateway to cultural, academic, and professional exchange.
                 .space-sep20
           .row
             .col-md-4.col-sm-4
               .feature.animated.fadeIn.animatedVisi{"data-animdelay" => "0.0s", "data-animrepeat" => "0", "data-animspeed" => "1s", "data-animtype" => "fadeIn", :style => "animation-delay: 0s; animation-duration: 1s;"}
                 .feature-image.img-overlay
                   / <img alt="" src="media/blog3.jpg">
-                  %img.img-responsive.wp-post-image{:alt => "acropolis-museum-gallery-1280x720", :height => "165", :src => "images/gallery_acropolis.jpg", :width => "293"}/
-                  .item-img-overlay
-                    .item_img_overlay_content
-                      %a(title="Acropolis museum" data-rel="prettyPhoto[portfolio]" href="http://www.theacropolismuseum.gr/en" class="portfolio-zoom icon-resize-full")
-
+                  %img.img-responsive{:alt => "acropolis-museum-gallery-1280x720", :height => "165", :src => "images/gallery_acropolis.jpg", :width => "293"}/
                 .feature-content
                   %h3.h3-blog-title
-                    %a{:href => "images/gallery_acropolis.jpg"} Historical Access
+                    %a Historical Access
                   %p
-                    Greece offers unique opportunities to future historians, archeologists and students of the classics with its many historical sites, museums and academic insititutions
-            
+                    Greece has long been an emblem of cultural and historical depth. It offers rich and varied access to historical sites, museums, and academic institutions to current and aspiring scholars of archaeology, history, the classics, and more. 
+
             .col-md-4.col-sm-4
               .feature.animated.fadeIn.animatedVisi{"data-animdelay" => "0.0s", "data-animrepeat" => "0", "data-animspeed" => "1s", "data-animtype" => "fadeIn", :style => "animation-delay: 0s; animation-duration: 1s;"}
                 .feature-image.img-overlay
                   / <img alt="" src="media/blog3.jpg">
-                  %img.img-responsive.wp-post-image{:alt => "acropolis-museum-gallery-1280x720", :height => "165", :src => "images/folk_culture.jpg", :width => "293"}/
-                  .item-img-overlay
-                    .item_img_overlay_content
-                      %a(title="Acropolis museum" data-rel="prettyPhoto[portfolio]" href="http://www.nytimes.com/2014/09/28/magazine/hunting-for-the-source-of-the-worlds-most-beguiling-folk-music.html?rref=magazine&_r=1" class="portfolio-zoom icon-resize-full")
-
+                  %img.img-responsive{:height => "165", :src => "images/science_stuff.jpg", :width => "293"}/
                 .feature-content
                   %h3.h3-blog-title
-                    %a{:href => "images/folk_culture.jpg"} Unique Culture
+                    %a Spectrum of Study
+                  %p
+                    In addition to the extensive collection of resources for social science affiliates, Greece has a multitude of offerings for all academic disciplines. The country’s striking biodiversity makes it a natural focal point for scientific research while its budding information technology and startup industries are creating a hub of information exchange and advancement. 
+
+            .col-md-4.col-sm-4
+              .feature.animated.fadeIn.animatedVisi{"data-animdelay" => "0.0s", "data-animrepeat" => "0", "data-animspeed" => "1s", "data-animtype" => "fadeIn", :style => "animation-delay: 0s; animation-duration: 1s;"}
+                .feature-image.img-overlay
+                  / <img alt="" src="media/blog3.jpg">
+                  %img.img-responsive{:height => "165", :src => "images/folk_culture.jpg", :width => "293"}/
+                .feature-content
+                  %h3.h3-blog-title
+                    %a An Enchanting Host
                   %p
                     %a{href: 'cultural_calendar.pdf'} Click here to see a cultural calendar for Greece
-                  %p Greece offers unique opportunities to future historians, archeologists and students of the classics with its many historical sites, museums and academic insititutions
+                  %p From the bustling metropolises to the charming rural villages, the Greek culture is one which entices and captivates with each encounter. To study or pursue a professional course here is inextricably linked with the opportunity to delve into traditions and relationships that will leave lasting impressions. 
+
             
-            .col-md-4.col-sm-4
-              .feature.animated.fadeIn.animatedVisi{"data-animdelay" => "0.0s", "data-animrepeat" => "0", "data-animspeed" => "1s", "data-animtype" => "fadeIn", :style => "animation-delay: 0s; animation-duration: 1s;"}
-                .feature-image.img-overlay
-                  / <img alt="" src="media/blog3.jpg">
-                  %img.img-responsive.wp-post-image{:alt => "acropolis-museum-gallery-1280x720", :height => "165", :src => "images/science_stuff.jpg", :width => "293"}/
-                  .item-img-overlay
-                    .item_img_overlay_content
-                      %a(title="Acropolis museum" data-rel="prettyPhoto[portfolio]" href="http://www.nytimes.com/2014/09/28/magazine/hunting-for-the-source-of-the-worlds-most-beguiling-folk-music.html?rref=magazine&_r=1" class="portfolio-zoom icon-resize-full")
-
-                .feature-content
-                  %h3.h3-blog-title
-                    %a{:href => "images/gallery_acropolis.jpg"} State of the Art Facilities
-                  %p
-                    Greece offers unique opportunities to future historians, archeologists and students of the classics with its many historical sites, museums and academic insititutions
-
         .space-sep60        
+      .angular-container{'ng-app' => 'universityList'}
         .container
           .row
             .col-md-12.col-sm-12
@@ -222,13 +213,44 @@
                   %h3 Hear why Greece offers a rich and unique study abroad experience
                 .space-sep20
           .row
-            .col-md-6.col-sm-6
-              %iframe(src="//player.vimeo.com/video/101688795" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
-            .col-md-6.col-sm-6
-              %iframe(src="//player.vimeo.com/video/101688587" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
-        
-        .space-sep60        
-      .angular-container{'ng-app' => 'universityList'}
+            .col-md-12.col-sm-12{'ng-controller' => 'StoriesController'}
+              #storyCarousel.carousel.slide{"data-ride" => "carousel"}
+                / Indicators
+                %ol.carousel-indicators
+                  %li{'ng-repeat' => 'testimony in testimonials', "data-slide-to" => "{{$index}}", "data-target" => "#storyCarousel", 'ng-class' => "{active: testimony == testimonials[0]}"}
+                .row
+                  .col-md-1.col-sm-1                
+                  .col-md-10.col-sm-10
+                    .carousel-inner
+                      .item{'ng-repeat' => 'testimony in testimonials', 'ng-class' => "{active: testimony == testimonials[0]}"}
+                        .container
+                          %img.img-responsive{:alt => "First slide", :src => "images/{{testimony.photo}}"}
+                          %p
+                            %b Name:
+                            {{testimony.name}}
+                          %b Position:
+                          %em {{testimony.position}}
+                          %p 
+                            %b Host Institution: 
+                            {{testimony.host}}
+                          %p
+                            %a.btn.btn-lg.btn-primary.scroll-to{'data-toggle' => "modal", 'data-target' => "#modal{{$index}}", :role => "button"} Read More about {{testimony.name.split(' ')[0]}}
+                        .modal.fade{id: "modal{{$index}}", role: 'dialog', tabindex: '-1'}
+                          .modal-dialog
+                            .modal-header
+                              {{testimony.name}}
+                              %button.close{"data-dismiss" => "modal", :type => "button"}
+                                %span{"aria-hidden" => "true"} ×
+                                %span.sr-only Close
+                            .modal-body
+                              %img.img-responsive{:alt => "First slide", :src => "images/{{testimony.photo}}"}
+                              {{testimony.details}}
+                    %a.left.carousel-control{"data-slide" => "prev", :href => "#storyCarousel"}
+                      %span.glyphicon.glyphicon-chevron-left
+                    %a.right.carousel-control{"data-slide" => "next", :href => "#storyCarousel"}
+                      %span.glyphicon.glyphicon-chevron-right
+
+                  .col-md-1.col-sm-1                        
         .container
           .row
             .col-md-12.col-sm-12
@@ -303,18 +325,15 @@
           .footer-wrapper
             .row
               / Footer Col.
-              .col-md-4.col-sm-4.footer-col
+              .col-md-3.col-sm-3.footer-col
                 .footer-content
                   .footer-content-logo
                     %img{:alt => "", :src => "images/fulbright_greece_logo.jpg"}/
-              .col-md-4.col-sm-4.footer-col
-                .footer-title
-                  Contact Us
+              .col-md-3.col-sm-3.footer-col
                 .footer-content
                   %ul.contact-info
                     %li
                       .contact-title
-                        %i.icon-map-marker>
                         Address
                       .contact-details 6 Vassilissis Sophias Avenue, 1st floor 106 74 Athens
                     %li
@@ -331,15 +350,26 @@
                         Website
                       .contact-details
                         %a{:href => "http://www.fulbright.gr/index_en.html"} http://www.fulbright.gr/
-              .col-md-4.col-sm-4.footer-col
+              .col-md-6.col-sm-6.footer-col
                 %h3 Get In Touch
                 %form{:action => "http://getsimpleform.com/messages?form_api_token=a1df72acb21cceec43221cbfb99bed31", :method => "post"}
-                  .row
-                    %input#name{:name => "name", :placeholder => "Name", :type => "text"}/
-                    %input#email{:name => "email", :placeholder => "Email", :type => "email"}/
-                    %textarea#message{:name => "message", :placeholder => "Message", :rows => "5"}
-                    %input.button.alt{:type => "submit", :value => "Send Message"}/
-
-              / //Footer Col.//
-              / Footer Col.
-
+                  .col-lg-12
+                    .form-group
+                      %label{:for => "InputName"} Your Name
+                      .input-group
+                        %input#InputName.form-control{:name => "InputName", :placeholder => "Enter Name", :type => "text"}/
+                        %span.input-group-addon
+                          %i.glyphicon.glyphicon-ok.form-control-feedback
+                    .form-group
+                      %label{:for => "InputEmail"} Your Email
+                      .input-group
+                        %input#InputEmail.form-control{:name => "InputEmail", :placeholder => "Enter Email", :type => "email"}/
+                        %span.input-group-addon
+                          %i.glyphicon.glyphicon-ok.form-control-feedback
+                    .form-group
+                      %label{:for => "InputMessage"} Message
+                      .input-group
+                        %textarea#InputMessage.form-control{:name => "InputMessage", :rows => "5"}
+                        %span.input-group-addon
+                          %i.glyphicon.glyphicon-ok.form-control-feedback
+                    %input#submit.btn.btn-info.pull-right{:name => "submit", :type => "submit", :value => "Submit"}/
