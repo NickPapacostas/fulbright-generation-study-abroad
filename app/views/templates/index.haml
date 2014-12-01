@@ -50,9 +50,9 @@
                   .navbar-collapse.collapse
                     %ul.nav.navbar-nav
                       %li
-                        %a{:href => "http://www.iie.org/Programs/Generation-Study-Abroad", target: "_blank"} Generation Study Abroad
-                      %li
                         %a.scroll-to{:href => "#fulbright-in-greece"} Fulbright Foundation in Greece
+                      %li
+                        %a.scroll-to{:href => "#generation-study-abroad"} Generation Study Abroad
                       %li
                         %a.scroll-to{:href => "#why-greece"} Why Greece?
                       %li
@@ -79,7 +79,7 @@
           .container.caption
             .carousel-caption
               %h1 Why study in Greece...
-              %p Rich culture, diverse academics, supportive institutions
+              %p Greece is a gateway to cultural, academic, and professional exchange.
               %p
                 %a.btn.btn-lg.btn-primary.scroll-to{:href => "#why-greece", :role => "button"} Read More
         .item
@@ -98,6 +98,31 @@
     / /.carousel
     .content-wrapper
       .body-wrapper
+        .container.fulbright-in-greece
+          .row
+            .col-md-12.col-sm-12
+              .center-title
+                .heading-title
+                  %h2.h2-section-title#fulbright-in-greece Fulbright in Greece
+                  %h3 An organization committed to supporting and facilitating the Generation Study Abroad Initiative
+          .space-sep60
+          .row
+            .col-md-6.col-sm-6
+              %p  
+                The Fulbright Program is one of the most prestigious awards programs worldwide, operating in over 155 countries. The vision of the Program is to stimulate educational, cultural, and professional opportunities which transcend borders and thereby foster a more peaceful and interconnected world.
+              %p
+                The Fulbright Foundation in Greece takes pride in being the oldest Fulbright Program in Europe and the second-oldest continuously operating Fulbright Program in the world. It offers scholarships to Greek and American citizens – students, teachers, scholars, and artists – to pursue a wide variety of educational projects. The Foundation awards grants to Greek and US citizens to study, teach, lecture, or conduct research in the United States and Greece respectively. 
+              %p
+                It is within the context of this legacy of international exchange and opportunity which Fulbright Greece welcomes and applauds the Generation Study Abroad initiative. This initiative, put forth by the Institute for International Education seeks to dramatically increase the number of U.S. students studying abroad by the end of the decade. The Fulbright Foundation in Greece is proud to announce its advocacy for an initiative which works in harmony with the Fulbright mission. The establishment of a centralized directory of programs of study in Greece is a resource  with which Fulbright hopes to encourage, guide, and facilitate American students in forging their own study abroad experience. 
+
+            .col-md-6.col-sm-6
+              .video-container
+                %video{:controls => "", :width => "400"}
+                  %source{:src => "https://s3-us-west-2.amazonaws.com/fulbright-greece-gst/fulbright_vid.mp4", :type => "video/mp4"}
+                  Your browser does not support HTML5 video.
+        
+
+        .space-sep60        
         .container.generation-study-abroad
           .row
             .col-md-12.col-sm-12
@@ -129,34 +154,10 @@
                 Generation Study Abroad website for details on how to Join the Campaign.
 
             .col-md-6.col-sm-6
-              %iframe( width="400" height="225" src="//www.youtube.com/embed/1Ai1KB8XSUU?rel=0&amp;controls=0" frameborder="0" allowfullscreen)
+              .video-container
+                %iframe( width="715" height="400" src="//www.youtube.com/embed/1Ai1KB8XSUU?rel=0&amp;controls=0" frameborder="0" allowfullscreen)
         
-        .space-sep60        
 
-        .container.fulbright-in-greece
-          .row
-            .col-md-12.col-sm-12
-              .center-title
-                .heading-title
-                  %h2.h2-section-title#fulbright-in-greece Fulbright in Greece
-                  %h3 An organization committed to supporting and facilitating the Generation Study Abroad Initiative
-          .space-sep60
-          .row
-            .col-md-6.col-sm-6
-              %p 
-                %em 
-                  The Fulbright Foundation in Greece is excited to be aiding in the 
-                  %a{href: 'http://www.iie.org/Programs/Generation-Study-Abroad'} Generation Study Abroad 
-                  effort by providing a consildated resource for American students looking to study in Greece. 
-              %p The Fulbright Foundation in Greece takes pride in being the oldest Fulbright Program in Europe and the second-oldest continuously operating Fulbright Program in the world. 
-              %p Since the Program's beginning in 1948, the Fulbright Foundation in Greece has awarded more than 4,700 grants to Greeks and Americans and has offered free advising services for studies in the United States to thousands of individuals. 
-              %p Fulbright alumni include Nobel and Pulitzer Prize winners, prime ministers and heads of state, professors and scientists, ambassadors and artists, Supreme Court Justices and company presidents.
-
-            .col-md-6.col-sm-6
-              %video{:controls => "", :width => "400"}
-                %source{:src => "https://s3-us-west-2.amazonaws.com/fulbright-greece-gst/fulbright_vid.mp4", :type => "video/mp4"}
-                Your browser does not support HTML5 video.
-        
         .space-sep60        
         .container
           .row
@@ -174,9 +175,9 @@
                   %img.img-responsive{:alt => "acropolis-museum-gallery-1280x720", :height => "165", :src => "images/gallery_acropolis.jpg", :width => "293"}/
                 .feature-content
                   %h3.h3-blog-title
-                    %a Historical Access
+                    %a An Academic Locus
                   %p
-                    Greece has long been an emblem of cultural and historical depth. It offers rich and varied access to historical sites, museums, and academic institutions to current and aspiring scholars of archaeology, history, the classics, and more. 
+                    Since antiquity, Greece has been an emblem of cultural and historical depth; and its position at the crossroads of Europe, Asia, and Africa continues to ordain it as an epicenter of contemporary study.Greece offers rich and varied access to historical sites, museums, and academic institutions to current and aspiring scholars of politics, archaeology, history, the classics, and more.
 
             .col-md-4.col-sm-4
               .feature.animated.fadeIn.animatedVisi{"data-animdelay" => "0.0s", "data-animrepeat" => "0", "data-animspeed" => "1s", "data-animtype" => "fadeIn", :style => "animation-delay: 0s; animation-duration: 1s;"}
@@ -185,9 +186,9 @@
                   %img.img-responsive{:height => "165", :src => "images/science_stuff.jpg", :width => "293"}/
                 .feature-content
                   %h3.h3-blog-title
-                    %a Spectrum of Study
+                    %a Diversity of Disciplines and Opportunities
                   %p
-                    In addition to the extensive collection of resources for social science affiliates, Greece has a multitude of offerings for all academic disciplines. The country’s striking biodiversity makes it a natural focal point for scientific research while its budding information technology and startup industries are creating a hub of information exchange and advancement. 
+                    In addition to the extensive collection of resources for social science affiliates, Greece has a multitude of offerings for all academic disciplines. The country’s striking biodiversity makes it a natural focal point for scientific research while its budding information technology and startup industries are creating a hub of information exchange and advancement. In Greece, students will gain access to state of the art research facilities and networking opportunities. 
 
             .col-md-4.col-sm-4
               .feature.animated.fadeIn.animatedVisi{"data-animdelay" => "0.0s", "data-animrepeat" => "0", "data-animspeed" => "1s", "data-animtype" => "fadeIn", :style => "animation-delay: 0s; animation-duration: 1s;"}
@@ -196,11 +197,15 @@
                   %img.img-responsive{:height => "165", :src => "images/folk_culture.jpg", :width => "293"}/
                 .feature-content
                   %h3.h3-blog-title
-                    %a An Enchanting Host
+                    %a 
+                      Commitment to 
+                      %em Philoxenia
                   %p
-                    %a{href: 'cultural_calendar.pdf'} Click here to see a cultural calendar for Greece
-                  %p From the bustling metropolises to the charming rural villages, the Greek culture is one which entices and captivates with each encounter. To study or pursue a professional course here is inextricably linked with the opportunity to delve into traditions and relationships that will leave lasting impressions. 
-
+                    %em Philoxenia
+                    is the ancient Greek term for the concept of hospitality and one of the pillars of Greek culture. The notion of xenia is rooted in a commitment to being a gracious host, and extends this warm reception to strangers (xenos). From the bustling metropolises to the charming rural villages, the Greek culture is one which entices and captivates with each encounter. To study or pursue a professional course here is inextricably linked with the opportunity to be welcomed into traditions and relationships that will leave lasting impressions. 
+                  %p{style: 'padding-top: 30px'}
+                    For a preview of some of the exciting cultural events and scholastic exhibitions in Greece, 
+                    %a{href: 'cultural_calendar.pdf'} visit here
             
         .space-sep60        
       .angular-container{'ng-app' => 'universityList'}
@@ -215,23 +220,20 @@
           .row
             .col-md-12.col-sm-12{'ng-controller' => 'StoriesController'}
               #storyCarousel.carousel.slide{"data-ride" => "carousel"}
-                / Indicators
-                %ol.carousel-indicators
-                  %li{'ng-repeat' => 'testimony in testimonials', "data-slide-to" => "{{$index}}", "data-target" => "#storyCarousel", 'ng-class' => "{active: testimony == testimonials[0]}"}
                 .row
+                  / Indicators
+                  %ol.carousel-indicators
+                    %li{'ng-repeat' => 'testimony in testimonials', "data-slide-to" => "{{$index}}", "data-target" => "#storyCarousel", 'ng-class' => "{active: testimony == testimonials[0]}"}
                   .col-md-1.col-sm-1                
                   .col-md-10.col-sm-10
                     .carousel-inner
                       .item{'ng-repeat' => 'testimony in testimonials', 'ng-class' => "{active: testimony == testimonials[0]}"}
-                        .container
-                          %img.img-responsive{:alt => "First slide", :src => "images/{{testimony.photo}}"}
-                          %p
-                            %b Name:
+                        %img.img-responsive{:alt => "First slide", :src => "images/{{testimony.photo}}"}
+                        .item-content
+                          %h3
                             {{testimony.name}}
-                          %b Position:
                           %em {{testimony.position}}
                           %p 
-                            %b Host Institution: 
                             {{testimony.host}}
                           %p
                             %a.btn.btn-lg.btn-primary.scroll-to{'data-toggle' => "modal", 'data-target' => "#modal{{$index}}", :role => "button"} Read More about {{testimony.name.split(' ')[0]}}
@@ -245,12 +247,11 @@
                             .modal-body
                               %img.img-responsive{:alt => "First slide", :src => "images/{{testimony.photo}}"}
                               {{testimony.details}}
-                    %a.left.carousel-control{"data-slide" => "prev", :href => "#storyCarousel"}
-                      %span.glyphicon.glyphicon-chevron-left
                     %a.right.carousel-control{"data-slide" => "next", :href => "#storyCarousel"}
                       %span.glyphicon.glyphicon-chevron-right
 
                   .col-md-1.col-sm-1                        
+
         .container
           .row
             .col-md-12.col-sm-12
@@ -258,6 +259,9 @@
                 .heading-title
                   %h2.h2-section-title#universities Academic Programs 
                   %h3 These programs are offered by Greek universities for international students
+                  %h3 
+                    %a{href: "http://iiepassport.org/SearchResult.asp?scho=&country=1612&com=&spon=&level=&term=&format=&language=&subject=&key=&region=&cost="}Click Here to see IIE programs in Greece
+
             .space-sep60
             .controller{'ng-controller' => 'UniversitiesController'}
               %table.table#university-list{'ng-table' => 'tableParams', 'template-pagination'=>"custom/pager", 'show-filter' => 'true'}
@@ -279,45 +283,18 @@
                   %td{'data-title' => "'Fees'", sortable: "'FEES'", 'filter' => "{'FEES': 'text'}"}
                     .fees
                       {{university['FEES']}}
-        .container
-          .row
-            .col-md-12.col-sm-12
-              .center-title
-                .heading-title
-                  %h2.h2-section-title#passport_programs Programs Offered by IIE 
-                  %h3 IIE sponsors the following programs in Greece
-            .space-sep60
-            .controller{'ng-controller' => 'PassportProgramsController'}
-              %table.table#program-list{'ng-table' => 'tableParams', 'template-pagination'=>"custom/pager"}
-                %tr{'ng-repeat' => 'program in $data'}
-                  %td{'data-title' => "'Program'", sortable: "'Program'", 'filter' => "{'Program': 'text'}"}
-                    .program
-                      {{program['Program']}}
-                  %td{'data-title' => "'Sponsor'", sortable: "'Sponsor'", 'filter' => "{'Sponsor': 'text'}"}
-                    .sponsor
-                      {{program['Sponsor']}}
-                  %td{'data-title' => "'FullPathName'", sortable: "'FullPathName'", 'filter' => "{'FullPathName': 'text'}"}
-                    .location
-                      {{program['FullPathName']}}
-
-
-                %script{:id => "custom/pager", :type => "text/ng-template"}
-                  %ul.pager.ng-cloak
-                    %li{"ng-class" => "{'disabled': !page.active, 'previous': page.type == 'prev', 'next': page.type == 'next'}", "ng-repeat" => "page in pages", "ng-show" => "page.type == 'prev' || page.type == 'next'", "ng-switch" => "page.type"}
-                      %a{:href => "", "ng-click" => "params.page(page.number)", "ng-switch-when" => "prev"} « Previous
-                      %a{:href => "", "ng-click" => "params.page(page.number)", "ng-switch-when" => "next"} Next »
-                    %li
-                      .btn-group
-                        %button.btn.btn-default{"ng-class" => "{'active':params.count() == 10}", "ng-click" => "params.count(10)", :type => "button"} 10
-                        %button.btn.btn-default{"ng-class" => "{'active':params.count() == 25}", "ng-click" => "params.count(25)", :type => "button"} 25
-                        %button.btn.btn-default{"ng-class" => "{'active':params.count() == 50}", "ng-click" => "params.count(50)", :type => "button"} 50
-                        %button.btn.btn-default{"ng-class" => "{'active':params.count() == 100}", "ng-click" => "params.count(100)", :type => "button"} 100
-                      .space-sep60        
-
-
-
-
-
+              %script{:id => "custom/pager", :type => "text/ng-template"}
+                %ul.pager.ng-cloak
+                  %li{"ng-class" => "{'disabled': !page.active, 'previous': page.type == 'prev', 'next': page.type == 'next'}", "ng-repeat" => "page in pages", "ng-show" => "page.type == 'prev' || page.type == 'next'", "ng-switch" => "page.type"}
+                    %a{:href => "", "ng-click" => "params.page(page.number)", "ng-switch-when" => "prev"} « Previous
+                    %a{:href => "", "ng-click" => "params.page(page.number)", "ng-switch-when" => "next"} Next »
+                  %li
+                    .btn-group
+                      %button.btn.btn-default{"ng-class" => "{'active':params.count() == 10}", "ng-click" => "params.count(10)", :type => "button"} 10
+                      %button.btn.btn-default{"ng-class" => "{'active':params.count() == 25}", "ng-click" => "params.count(25)", :type => "button"} 25
+                      %button.btn.btn-default{"ng-class" => "{'active':params.count() == 50}", "ng-click" => "params.count(50)", :type => "button"} 50
+                      %button.btn.btn-default{"ng-class" => "{'active':params.count() == 100}", "ng-click" => "params.count(100)", :type => "button"} 100
+                    .space-sep60        
 
     %footer
       .footer
@@ -359,17 +336,14 @@
                       .input-group
                         %input#InputName.form-control{:name => "InputName", :placeholder => "Enter Name", :type => "text"}/
                         %span.input-group-addon
-                          %i.glyphicon.glyphicon-ok.form-control-feedback
                     .form-group
                       %label{:for => "InputEmail"} Your Email
                       .input-group
                         %input#InputEmail.form-control{:name => "InputEmail", :placeholder => "Enter Email", :type => "email"}/
                         %span.input-group-addon
-                          %i.glyphicon.glyphicon-ok.form-control-feedback
                     .form-group
                       %label{:for => "InputMessage"} Message
                       .input-group
                         %textarea#InputMessage.form-control{:name => "InputMessage", :rows => "5"}
                         %span.input-group-addon
-                          %i.glyphicon.glyphicon-ok.form-control-feedback
                     %input#submit.btn.btn-info.pull-right{:name => "submit", :type => "submit", :value => "Submit"}/

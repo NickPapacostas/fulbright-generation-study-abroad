@@ -51,6 +51,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	width: inherit;
 }
 
+#storyCarousel .item-content {
+  height: 220px;
+  padding-top: 1em; 
+  text-align: center;
+}
+
+#storyCarousel .carousel-indicators {
+  padding-left: 3em;
+  top: 200px;
+}
+
 .modal {
 	background-color: white;
 	color: black;
@@ -65,4 +76,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 .footer {
 	color: white;
+}
+
+
+/*responsive video embed: http://designers.hubspot.com/docs/snippets/responsive/how-to-make-a-youtube-or-other-iframe-video-responsive*/
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

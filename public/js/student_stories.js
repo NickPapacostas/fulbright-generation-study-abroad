@@ -5,7 +5,6 @@ universityList.controller('StoriesController', function($scope, $http){
 
   testimonialInit = function(data){
   	$scope.testimonials = data;
-  	window.testimonials = data;
   }
 });
 
